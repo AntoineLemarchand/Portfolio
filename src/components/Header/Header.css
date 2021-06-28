@@ -1,0 +1,139 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 0 1 10%;
+  height: 10vh;
+  background-color: #282828;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 1em 0 1em;
+}
+
+#Logo {
+  display: flex;
+  flex-direction: row;
+}
+
+#Logo img {
+  height: 6vh;
+  margin: 0 0 0 5vw;
+}
+
+#Logo p {
+  margin-left: 1vw;
+  font-size: 2vh;
+  color: #ebdbb2;
+}
+
+#mobileNav {
+  display: none;
+  padding-right: 5vw;
+}
+
+#mobileNav #open {
+  position: absolute;
+  right: 5vw;
+  font-size: 4vh;
+  cursor: pointer;
+}
+
+#mobileNav #close {
+  font-size: 4vh;
+  cursor: pointer;
+}
+
+#mobileNav #burger {
+  position: fixed;
+  right: 100vw;
+}
+
+#mobileNav #navContent {
+  position: fixed;
+  right: -65vw;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  padding-top: 3vh;
+  padding: 3vh 0 0 3vh;
+  width: 60vw;
+  height: 100vh;
+  background-color: #1d2021;
+  transition: right .3s;
+  z-index: 1;
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+
+#items a {
+  background-color: #ebdbb2;
+  color: #282828;
+  text-decoration: none;
+  font-size: 4vh;
+}
+
+#mobileNav #burger:checked ~ #navContent {
+  right: 0;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav a {
+  display: inline-flex;
+  position: relative;
+  font-size: 2vh;
+  color: #ebdbb2;
+  text-decoration: none;
+  transition: color .3s;
+  z-index: 1;
+  padding: 5px 30px;
+  margin: 1vw;
+}
+
+#nav a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ebdbb2;
+  transition: width .3s;
+  z-index: -1;
+  box-shadow: 0 3px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav a:hover {
+  color: #282828;
+}
+
+#nav a:hover:before {
+  width: 100%;
+}
+
+@media screen and ( orientation:portrait ){
+  #nav {
+    display: none;
+  }
+
+  #mobileNav {
+    display: block;
+  }
+}

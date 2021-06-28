@@ -1,0 +1,39 @@
+#Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15vh auto auto auto;
+}
+
+#Contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70vw;
+}
+
+#Contact form input, #Contact form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 2vh;
+  margin: 5px 0 25px 0;
+  padding: 10px;
+  background-color: #282828;
+  color: #ebdbb2;
+  border: 2px solid #ebdbb2;
+}
+
+#Contact form button {
+  border: none;
+  border-radius: 10px;
+  font-size: 2vh;
+  margin: 5px 0 25px 0;
+  width: 150px;
+  padding: 10px;
+  background-color: #282828;
+  color: #ebdbb2;
+  border: 2px solid #ebdbb2;
+  cursor: pointer;
+}

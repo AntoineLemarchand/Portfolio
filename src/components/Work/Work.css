@@ -1,0 +1,92 @@
+#Work {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh auto auto auto;
+}
+
+#Work h1 {
+  margin: 0 auto 0 auto;
+}
+
+#Projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: initial;
+  flex-wrap: wrap;
+}
+
+.Project {
+  width: 45vh;
+  height: 40vh;
+  border-radius: 15px;
+  margin: 3vh 3vh 3vh 3vh;
+}
+
+.Project img {
+  width: 45vh;
+  height: 30vh;
+  border-radius: 15px;
+}
+
+.Ptop, .Pbottom {
+  position: relative;
+  background-color: #1d2021;
+  transition: .3s;
+  opacity: 0;
+}
+
+.Ptop {
+  width: 45vh;
+  height: 10vh;
+  top: 10vh;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+
+.Ptop p {
+  margin: 0;
+  color: #98971a;
+}
+
+.Ptop p:nth-child(2) {
+  font-size: 2vh;
+}
+
+
+.Pbottom {
+  width: 45vh;
+  height: 10vh;
+  top: -10vh;
+  display: flex;
+  border-radius: 0 0 15px 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.website {
+  color: #458588;
+  text-decoration: none;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.git {
+  color: #fe8019;
+  text-decoration: none;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.Project:hover > .Ptop {
+  top: 15px;
+  opacity: 1;
+}
+
+.Project:hover > .Pbottom {
+  top: -15px;
+  opacity: 1;
+}
+

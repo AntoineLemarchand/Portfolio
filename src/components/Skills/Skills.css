@@ -1,0 +1,37 @@
+#Skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70vw;
+  margin: 5vh auto 0 auto;
+}
+
+#Skillset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15vh;
+  height: 15vh;
+  background-color: #1d2021;
+  border-radius: 25px;
+  box-shadow: black 3px 3px 5px;
+  margin: 10px;
+}
+
+.Skill .Icon {
+  font-size: 5vh;
+}
+
+.Skill p {
+  font-size: 2vh;
+}
