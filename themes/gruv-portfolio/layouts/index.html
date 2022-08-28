@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<div class="index">
+	<div class="index_content">
+		<img src="images/avatar.svg" alt="my avatar" title="logo">	
+		<div class="text">
+			{{ .Content }}
+		</div>
+	</div>
+	{{ partial "social.html" .}}
+</div>
+
+{{ partial "footer.html" . }}

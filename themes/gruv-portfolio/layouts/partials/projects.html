@@ -1,0 +1,18 @@
+{{ with .Site.Params.project }}
+<ul class="projectList">
+	{{ range sort . "weight" }}
+	<li>
+		<img src="{{ print "/images/" .name ".png" }}"/>
+		<div class="infos">
+			<p>{{ .name }}</p>
+			<div class="links">
+				<a href={{ .source }}>source</a>
+				{{ with .preview}}
+				<a href={{ . }} class="preview">preview</a>
+				{{ end }}
+			</div>
+		</div>
+	</li>
+	{{ end }}
+</ul>
+{{ end }}
