@@ -45,3 +45,17 @@ footer {
 ul {
 	list-style: none;
 }
+
+.post-snippet {
+	padding: 2vh;
+	border-radius: 1em;
+}
+
+.post-snippet h3 {
+	margin: 0;
+}
+
+.post-snippet p {
+	margin: 0;
+	text-align: right;
+}
