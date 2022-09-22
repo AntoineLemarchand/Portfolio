@@ -3,7 +3,7 @@
 	{{ range sort . "weight" }}
 	<li>
 		<a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
-			<img src="{{ print "icons/" .name ".svg"}}"/>
+			<img src="{{ print "icons/" .name ".svg"}}" alt={{ .name }}/>
 		</a>
 	</li>
 	{{ end }}

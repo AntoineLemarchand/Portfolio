@@ -1,6 +1,5 @@
 +++
 title = "Projects"
-date = "2022-08-13"
 author = "Antoine Lemarchand"
 +++
 

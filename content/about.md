@@ -1,6 +1,5 @@
 +++
 title = "About me"
-date = "2022-08-13"
 aliases = ["about-me", "about"]
 author = "Antoine Lemarchand"
 +++

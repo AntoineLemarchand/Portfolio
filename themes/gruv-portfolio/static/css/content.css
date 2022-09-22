@@ -1,5 +1,5 @@
 .content {
-	max-width: 50vw;
+	max-width: 70vw;
 	margin: auto;
 }
 
@@ -34,6 +34,7 @@
 	text-decoration: none;
 	transition: .1s ease-in-out;
 	padding: 0 .05rem 0 .05rem;
+	word-wrap: break-word;
 }
 
 .content p a:hover {
