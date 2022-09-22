@@ -93,4 +93,9 @@ nav .logo {
 		margin: 0;
 		text-align: end;
 	}
+
+	nav ul li {
+		margin: 1rem auto 1rem auto;
+		padding: 0;
+	}
 }
