@@ -95,7 +95,7 @@ nav .logo {
 	}
 
 	nav ul li {
-		margin: 1rem auto 1rem auto;
+		margin: 0 auto .5rem auto;
 		padding: 0;
 	}
 }
