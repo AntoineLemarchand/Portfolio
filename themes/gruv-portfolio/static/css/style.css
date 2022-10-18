@@ -13,6 +13,25 @@ body {
 	grid-template-rows: auto 1fr auto;
 }
 
+img {
+	display: inline;
+	width: 30%;
+}
+
+pre {
+	display: flex;
+}
+
+code {
+	width: 100%;
+	background-color: #1d2021;
+	color: #d5c4a1;
+	padding: 1rem;
+	margin: auto;
+	border-radius: .5rem;
+	border: 2px #79740e solid;
+}
+
 p, h1, h2, h3 {
 	color: #ebdbb2;
 }
@@ -43,7 +62,7 @@ footer {
 }
 
 ul {
-	list-style: none;
+	color: #ebdbb2;
 }
 
 .post-snippet {

@@ -53,16 +53,14 @@ font = "IBM Plex Mono"
 	url = "https://www.linkedin.com/in/antoine-lemarchand-334526162/"
 
 [[params.project]]
-	name = "minirt"
-	source = "https://github.com/antoinelemarchand/minirt"
-	weight = 2
-
-[[params.project]]
 	name = "fract-ol"
-	source = "https://github.com/antoinelemarchand/fract-ol"
 	weight = 2
 
 [[params.project]]
 	name = "minishell"
-	source = "https://github.com/antoinelemarchand/minishell"
 	weight = 2
+
+[[params.project]]
+	name = "minirt"
+	weight = 2
+

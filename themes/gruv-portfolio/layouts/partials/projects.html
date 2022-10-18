@@ -2,16 +2,14 @@
 <ul class="projectList">
 	{{ range sort . "weight" }}
 	<li>
+		<a href="/details/{{ .name }}/">
 		<img src="{{ print "/images/" .name ".png" }}"/>
 		<div class="infos">
 			<p>{{ .name }}</p>
 			<div class="links">
-				<a href={{ .source }}>source</a>
-				{{ with .preview}}
-				<a href={{ . }} class="preview">preview</a>
-				{{ end }}
 			</div>
 		</div>
+		</a>
 	</li>
 	{{ end }}
 </ul>
