@@ -64,3 +64,6 @@ font = "IBM Plex Mono"
 	name = "minirt"
 	weight = 2
 
+[[params.project]]
+	name = "ft_irc"
+	weight = 2
