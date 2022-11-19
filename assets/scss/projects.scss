@@ -1,3 +1,5 @@
+@import 'color.scss';
+
 .projectList {
 	display: flex;
 	flex-direction: row;
@@ -30,7 +32,7 @@
 	}
 
 	.infos p {
-		background-color: #282828;
+		background-color: $background;
 		padding: 1vh;
 		width: max-content;
 		border-radius: 0 20em 20em 0;
@@ -38,7 +40,7 @@
 
 
 	.infos a {
-		background-color: #282828;
+		background-color: $background;
 		padding: 1vh;
 		width: max-content;
 		border-radius: 20em;

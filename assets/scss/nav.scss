@@ -1,3 +1,5 @@
+@import 'color.scss';
+
 nav {
 	display: flex;
 	flex-direction: row;
@@ -12,7 +14,7 @@ nav {
 
 	a {
 		text-decoration: none;
-		color: #ebdbb2;
+		color: $textColor;
 		transition: .2s ease;
 		font-size: 1.5rem;
 		margin: 0 1rem 0 1rem;
@@ -40,7 +42,8 @@ nav {
 		bottom: 0;
 		left: 0;
 		transform: scaleY(0);
-		transition: transform 0.1s ease-out;
+		transition: 0.1s ease-out;
+		z-index: 10000000;
 	}
 
 	a:hover::after {
@@ -49,28 +52,13 @@ nav {
 	}
 
 	.logo::after {
-		background-color: #fabd2f;
+		background-color: $yellow;
 	}
 
-	ul a {
-
-		&:nth-child(1)::after {
-			background-color: #458588;
-		}
-
-		&:nth-child(2)::after {
-			background-color: #fe8019;
-		}
-
-		&:nth-child(3)::after {
-			background-color: #b8bb26;
-		}
-
-		&:nth-child(4)::after {
-			background-color: #fb4934;
-		}
-
-	}
+	ul a:nth-child(1)::after {background-color: $blue;}
+	ul a:nth-child(2)::after {background-color: $orange;}
+	ul a:nth-child(3)::after {background-color: $green;}
+	ul a:nth-child(4)::after {background-color: $red;}
 }
 
 @media all and (max-width: 50em)

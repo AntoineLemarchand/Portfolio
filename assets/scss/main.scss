@@ -1,5 +1,48 @@
-@import 'style.scss';
+@import 'color.scss';
 @import 'nav.scss';
+@import 'list.scss';
 @import 'content.scss';
 @import 'index.scss';
 @import 'projects.scss';
+
+html {
+	font-family: 'Courier New', monospace;
+	width: 100%;
+	height: 99%;
+	overflow-x: hidden;
+	background-color: $background;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+p, h1, h2, h3 {
+	color: $textColor;
+	max-width: 100%;
+}
+
+h1, h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+	color: $subTextColor;
+}
+
+footer {
+	text-align: center;
+}
+
+ul {
+	color: $textColor;
+	list-style: square;
+}
