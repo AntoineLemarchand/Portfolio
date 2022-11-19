@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Author: Antoine Lemarchand, Type: Portfolio, Category: Programming">
+
+	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+
+	<link rel="icon" href="/images/avatar.svg" />
+	<link rel="mask-icon" href="/images/avatar.svg" />
+
+	<link rel="manifest" href="/manifest.json">
+
+	{{ partial "head.html" }}
+
+	{{ with .OutputFormats.Get "rss" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
+
+</head>
+
+<body>
+
+{{ partial "nav.html" . }}
+
+<main class="content">

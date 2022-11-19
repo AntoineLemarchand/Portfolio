@@ -1,0 +1,42 @@
+.content {
+	max-width: 70vw;
+	margin: auto;
+
+	h1, h3 {
+		max-width: max-content;
+	}
+
+	h1::after {
+		content: "";
+		position: relative;
+		display: block;
+		height: .5vh;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background-color: #b8bb26;
+	}
+
+	h3::after {
+		content: "";
+		position: relative;
+		display: block;
+		height: .5vh;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background-color: #fe8019;
+	}
+
+	a {
+		color: #458588;
+		text-decoration: none;
+		transition: .1s ease-in-out;
+		padding: 0 .05rem 0 .05rem;
+		word-wrap: break-word;
+	}
+
+	p a:hover {
+		background-color: #3c3836;
+	}
+}

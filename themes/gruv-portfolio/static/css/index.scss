@@ -1,0 +1,103 @@
+.index {
+
+	img {
+		width: 13vh;
+		height: 13vh;
+		border-radius: 40%;
+		border-style: solid;
+		border-color: #ebdbb2;
+		margin-right: 1rem;
+	}
+
+	h1 {
+		font-size: 3vh;
+		margin: 0;
+		padding: 0;
+	}
+
+	h2 {
+		font-size: 3vh;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul {
+		li {
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-right: 1.25em;
+		}
+	}
+}
+@keyframes githubColor {
+	100% {
+		filter: invert(41%) sepia(53%) saturate(5832%) hue-rotate(11deg) brightness(90%) contrast(91%);
+	}
+}
+
+@keyframes twitterColor {
+	100% {
+		filter: invert(53%) sepia(57%) saturate(2758%) hue-rotate(176deg) brightness(98%) contrast(94%);
+	}
+}
+
+@keyframes linkedinColor {
+	100% {
+		filter: invert(26%) sepia(97%) saturate(1610%) hue-rotate(177deg) brightness(95%) contrast(89%);
+	}
+}
+
+.index ul li a:hover {
+	animation-duration: .2s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+
+.index ul li:nth-child(1) a:hover {
+	animation-name: githubColor;
+}
+
+.index ul li:nth-child(2) a:hover {
+	animation-name: linkedinColor;
+}
+
+.index ul {
+	list-style: none;
+	display: flex;
+	align-self: center;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.index_content {
+	margin: 0 auto 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.index {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media all and (max-width: 50em) {
+	.index_content {
+		display: block;
+		text-align: center;
+	}
+
+	.index ul {
+		width: 100%;
+		padding: 0;
+		justify-content: center;
+	}
+
+	.index ul li {
+		width: 2rem;
+		height: 2rem;
+	}
+}

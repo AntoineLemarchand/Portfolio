@@ -1,0 +1,14 @@
+{{ with .Site.Params.social }}
+<ul>
+	{{ range sort . "weight" }}
+	<a
+		href="{{ .url | safeURL }}"
+		aria-label="{{ .name }}"
+		{{ if .rel }}rel="{{ .rel }}"{{ end }}
+		{{ if .target }}target="{{ .target }}"{{ end }}
+		{{ if .type }}type="{{ .type }}"{{ end }}>
+		{{partial "svg" .name}}
+	</a>
+	{{ end }}
+</ul>
+{{ end }}

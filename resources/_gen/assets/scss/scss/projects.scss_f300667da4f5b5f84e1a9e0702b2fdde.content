@@ -1,0 +1,40 @@
+.projectList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  padding: 0; }
+  .projectList li {
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 10%;
+    overflow: hidden; }
+  .projectList img {
+    width: 30vh;
+    height: 30vh;
+    transition: .2s ease-in-out;
+    z-index: 0; }
+  .projectList .infos {
+    position: relative;
+    top: -50%;
+    width: 100%;
+    transition: .2s ease-in-out; }
+  .projectList .infos p {
+    background-color: #282828;
+    padding: 1vh;
+    width: max-content;
+    border-radius: 0 20em 20em 0; }
+  .projectList .infos a {
+    background-color: #282828;
+    padding: 1vh;
+    width: max-content;
+    border-radius: 20em;
+    font-size: 2vh; }
+  .projectList .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
