@@ -1,3 +1,5 @@
+@import './color';
+
 .content {
 	max-width: 70%;
 	margin: auto;
@@ -14,7 +16,7 @@
 		width: 100%;
 		bottom: 0;
 		left: 0;
-		background-color: #b8bb26;
+		background-color: $green;
 	}
 
 	h3::after {
@@ -25,11 +27,11 @@
 		width: 100%;
 		bottom: 0;
 		left: 0;
-		background-color: #fe8019;
+		background-color: $orange;
 	}
 
 	a {
-		color: #458588;
+		color: $blue;
 		text-decoration: none;
 		transition: .1s ease-in-out;
 		padding: 0 .05rem 0 .05rem;
@@ -38,11 +40,12 @@
 		&::after {
 			display: inline;
 		}
+
+		&:hover {
+			background-color: $light-background;
+		}
 	}
 
-	p a:hover {
-		background-color: #3c3836;
-	}
 
 	img {
 		width: 30%;
@@ -54,11 +57,10 @@
 
 	code {
 		width: 100%;
-		background-color: #1d2021;
-		color: #d5c4a1;
+		background-color: $dark-background;
+		color: $subTextColor;
 		padding: 1rem;
 		margin: auto;
-		border-radius: .5rem;
-		border: 2px #79740e solid;
+		border: dashed .2rem $subTextColor;
 	}
 }

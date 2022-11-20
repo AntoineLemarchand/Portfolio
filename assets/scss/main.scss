@@ -40,6 +40,14 @@ h4 {
 
 footer {
 	text-align: center;
+
+	a {
+		color: $blue;
+		text-decoration: none;
+
+		&:hover {
+		}
+	}
 }
 
 ul {

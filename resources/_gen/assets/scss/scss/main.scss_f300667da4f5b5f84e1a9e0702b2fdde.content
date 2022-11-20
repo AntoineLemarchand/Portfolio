@@ -109,8 +109,8 @@ nav {
     word-wrap: break-word; }
     .content a::after {
       display: inline; }
-  .content p a:hover {
-    background-color: #3c3836; }
+    .content a:hover {
+      background-color: #3c3836; }
   .content img {
     width: 30%; }
   .content pre {
@@ -118,11 +118,10 @@ nav {
   .content code {
     width: 100%;
     background-color: #1d2021;
-    color: #d5c4a1;
+    color: #a89984;
     padding: 1rem;
     margin: auto;
-    border-radius: .5rem;
-    border: 2px #79740e solid; }
+    border: dashed 0.2rem #a89984; }
 
 .index img {
   width: 13vh;
@@ -285,6 +284,9 @@ h4 {
 
 footer {
   text-align: center; }
+  footer a {
+    color: #458588;
+    text-decoration: none; }
 
 ul {
   color: #ebdbb2;
