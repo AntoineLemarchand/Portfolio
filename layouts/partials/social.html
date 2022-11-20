@@ -1,6 +1,7 @@
 {{ with .Site.Params.social }}
 <ul>
 	{{ range sort . "weight" }}
+	<li>
 	<a
 		href="{{ .url | safeURL }}"
 		aria-label="{{ .name }}"
@@ -8,7 +9,7 @@
 		{{ if .target }}target="{{ .target }}"{{ end }}
 		{{ if .type }}type="{{ .type }}"{{ end }}>
 		{{partial "svg" .name}}
-	</a>
+	</a></li>
 	{{ end }}
 </ul>
 {{ end }}
