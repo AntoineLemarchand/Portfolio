@@ -1,8 +1,4 @@
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: 100%; }
   nav a {
     text-decoration: none;
@@ -25,7 +21,9 @@ nav {
 @media all and (min-width: 50em) {
   nav ul {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
     nav ul li:nth-child(1) > a::after {
       background-color: #83a598; }
     nav ul li:nth-child(2) > a::after {
@@ -70,10 +68,11 @@ nav {
       padding: 0;
       margin: 0;
       text-align: end; }
-    nav ul a {
-      font-size: 1rem;
-      margin: 0 auto .5rem auto;
-      padding: 0; } }
+      nav ul a {
+        width: 100%;
+        font-size: 1rem;
+        margin: .2rem auto .2rem auto;
+        padding: 0; } }
 
 .post-snippet {
   padding: 2vh;

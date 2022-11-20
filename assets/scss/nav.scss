@@ -1,10 +1,6 @@
 @import 'color.scss';
 
 nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
 	width: 100%;
 
 	a {
@@ -38,6 +34,8 @@ nav {
 		ul {
 			display: flex;
 			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
 
 			li {
 				&:nth-child(1) > a::after {background-color: $blue;}
@@ -95,12 +93,14 @@ nav {
 			padding: 0;
 			margin: 0;
 			text-align: end;
+
+			a {
+				width: 100%;
+				font-size: 1rem;
+				margin: .2rem auto .2rem auto;
+				padding: 0;
+			}
 		}
 
-		ul a {
-			font-size: 1rem;
-			margin: 0 auto .5rem auto;
-			padding: 0;
-		}
 	}
 }
