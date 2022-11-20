@@ -38,6 +38,13 @@ nav {
 		ul {
 			display: flex;
 			flex-direction: row;
+
+			li {
+				&:nth-child(1) > a::after {background-color: $blue;}
+				&:nth-child(2) > a::after {background-color: $orange;}
+				&:nth-child(3) > a::after {background-color: $green;}
+				&:nth-child(4) > a::after {background-color: $red;}
+			}
 		}
 	}
 
@@ -63,10 +70,6 @@ nav {
 		background-color: $yellow;
 	}
 
-	ul a:nth-child(1)::after {background-color: $blue;}
-	ul a:nth-child(2)::after {background-color: $orange;}
-	ul a:nth-child(3)::after {background-color: $green;}
-	ul a:nth-child(4)::after {background-color: $red;}
 }
 
 @media all and (max-width: 50em)
