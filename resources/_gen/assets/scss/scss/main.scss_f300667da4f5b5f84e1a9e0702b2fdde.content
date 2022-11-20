@@ -144,7 +144,10 @@ nav {
 .index ul a {
   width: 2.5rem;
   height: 2.5rem;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  background: none; }
+  .index ul a:hover {
+    background: none; }
   .index ul a svg {
     width: 100%;
     height: 100%;
@@ -152,9 +155,11 @@ nav {
     fill: #ebdbb2;
     transition: .2s ease-in-out; }
   .index ul a:first-child:hover > svg {
-    fill: #fb4934; }
+    fill: #fb4934;
+    background: #282828; }
   .index ul a:last-child:hover > svg {
-    fill: #458588; }
+    fill: #458588;
+    background: #282828; }
 
 @keyframes githubColor {
   100% {
