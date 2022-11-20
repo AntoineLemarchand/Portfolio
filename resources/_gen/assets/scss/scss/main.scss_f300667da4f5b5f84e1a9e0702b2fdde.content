@@ -195,13 +195,14 @@ nav {
     margin-bottom: 2vh;
     width: 30vh;
     height: 30vh;
-    border-radius: 10%;
-    overflow: hidden; }
-  .projectList img {
-    width: 30vh;
-    height: 30vh;
-    transition: .2s ease-in-out;
-    z-index: 0; }
+    border-radius: 10px;
+    overflow: hidden;
+    border: dashed 0.2rem #a89984; }
+    .projectList li img {
+      width: 30vh;
+      height: 30vh;
+      transition: .2s ease-in-out;
+      z-index: 0; }
   .projectList .infos {
     position: relative;
     top: -50%;
@@ -223,7 +224,13 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
-
+  @media all and (max-width: 50em) {
+    .projectList li {
+      height: 10vh;
+      position: relative; }
+      .projectList li .infos {
+        position: absolute;
+        top: 0; } }
 html {
   font-family: 'Courier New', monospace;
   width: 100%;

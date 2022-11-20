@@ -13,15 +13,16 @@
 		margin-bottom: 2vh;
 		width: 30vh;
 		height: 30vh;
-		border-radius: 10%;
+		border-radius: 10px;
 		overflow: hidden;
-	}
+		border: dashed .2rem $subTextColor;
 
-	img {
-		width: 30vh;
-		height: 30vh;
-		transition: .2s ease-in-out;
-		z-index: 0;
+		img {
+			width: 30vh;
+			height: 30vh;
+			transition: .2s ease-in-out;
+			z-index: 0;
+		}
 	}
 
 	.infos {
@@ -52,6 +53,18 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+	}
+
+	@media all and (max-width: 50em) {
+		li {
+			height: 10vh;
+			position: relative;
+
+			.infos {
+				position: absolute;
+				top: 0;
+			}
+		}
 	}
 }
 
