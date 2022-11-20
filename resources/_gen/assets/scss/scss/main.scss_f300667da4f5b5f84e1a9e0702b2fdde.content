@@ -1,5 +1,7 @@
 nav {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  align-items: center; }
   nav a {
     text-decoration: none;
     color: #ebdbb2;
@@ -89,23 +91,9 @@ nav {
   .content h1, .content h3 {
     max-width: max-content; }
   .content h1::after {
-    content: "";
-    position: relative;
-    display: block;
-    height: .5vh;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: #b8bb26; }
+    text-decoration: #b8bb26; }
   .content h3::after {
-    content: "";
-    position: relative;
-    display: block;
-    height: .5vh;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: #fe8019; }
+    text-decoration: #fe8019; }
   .content a {
     color: #83a598;
     text-decoration: none;
