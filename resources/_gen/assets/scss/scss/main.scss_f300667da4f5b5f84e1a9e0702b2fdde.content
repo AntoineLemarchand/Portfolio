@@ -263,7 +263,7 @@ nav {
 html {
   font-family: 'Courier New', monospace;
   width: 100%;
-  height: 99%;
+  height: 95%;
   overflow-x: hidden;
   background-color: #282828; }
 
