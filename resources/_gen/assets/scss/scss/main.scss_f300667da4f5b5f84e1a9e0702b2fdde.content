@@ -88,12 +88,17 @@ nav {
 .content {
   max-width: 70%;
   margin: auto; }
-  .content h1, .content h3 {
-    max-width: max-content; }
-  .content h1::after {
-    text-decoration: #b8bb26; }
-  .content h3::after {
-    text-decoration: #fe8019; }
+  .content h1, .content h2 {
+    max-width: max-content;
+    text-underline-position: under;
+    line-height: 3rem; }
+  .content h1 {
+    text-decoration: underline 0.2rem #b8bb26; }
+  .content h2 {
+    text-decoration: underline 0.2rem #fe8019; }
+  .content .date {
+    color: #a89984;
+    font-weight: bold; }
   .content a {
     color: #83a598;
     text-decoration: none;
@@ -236,13 +241,13 @@ p, h1, h2, h3 {
   color: #ebdbb2;
   max-width: 100%; }
 
-h1, h2 {
+h1 {
   font-size: 2rem; }
 
-h3 {
+h2 {
   font-size: 1.5rem; }
 
-h4 {
+h3 {
   font-size: 1rem;
   color: #a89984; }
 

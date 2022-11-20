@@ -3,4 +3,4 @@ title: "home"
 ---
 
 # Antoine Lemarchand
-## developer, musician
+## Award losing developer

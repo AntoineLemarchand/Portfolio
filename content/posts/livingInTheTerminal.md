@@ -7,7 +7,7 @@ When i first started using Linux, Most of the tools I used were GUI based
 (Graphical User Interface). But the idea of linux is about owning your os and
 your computer, to do so, you have to understand it.
 
-### Why "live" in a ascii textbox
+## Why "live" in a ascii textbox
 The terminal is an interface for your system. It usually manages it by
 interpreting a shell (like bash or zsh) to execute programs or moving files
 around.
@@ -29,12 +29,12 @@ a norm and tools that should be expected are mostly present. For example, to
 make a tool easily reproducible, a config file is a must and is almost always
 present in CLI software (I have yet to see a CLI tool that does not use one).
 
-### The tools for the job
+## The tools for the job
 To really understand that last part, I should elaborate with a few example. To
 "live" in an environment, you have to determine your needs. To me, I need to be
 able to edit and consult content, both locally and on the internet.
 
-#### Editing files
+### Editing files
 To edit the locations of files or edit there content, multiple options are
 available. To edit files, you can use linux builtins commands (**nano** if you
 dont want to change your habits too much, or **vim** if you want a
@@ -48,7 +48,7 @@ is a good solution but [nnn](https://en.wikipedia.org/wiki/Nnn_(file_manager))
 is more ressource-friendly and performant as it is written in C
 (against python) for ranger).
 
-#### Consult content
+### Consult content
 The good thing about terminal software is that it mostly uses technologies that
 have endured the tests of time. Even if Corporations dont wish for these to be
 used (try to get a youtube channel rss feed and find out) You still can use
@@ -67,7 +67,7 @@ with [mpv](https://mpv.io/) a light video client linked to
 You could even listen to radio using
 [mplayer](https://en.wikipedia.org/wiki/MPlayer).
 
-### Where to get started
+## Where to get started
 All this can be overwhelming, here are a few tutorials to get you started:
 - bash linux shell commands:
 [geekforgeeks tutorial](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)
@@ -76,7 +76,7 @@ All this can be overwhelming, here are a few tutorials to get you started:
 	- [newsboat with mpv macro](https://newsboat.org/releases/2.28/docs/newsboat.html#_streaming_audio_content_with_a_media_player)
 	- [cool config](https://viniciusmuller.github.io/blog/Workflow/newsboat_plus_mpv.html)
 
-### Is it really possible ?
+## Is it really possible ?
 I used quotes aroung living this whole time because I dont. The web browsing
 experience, although ressource-friendly (basic styling, just text) does not
 provide access to a lot of pages using a javascript framework.

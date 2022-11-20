@@ -4,16 +4,23 @@
 	max-width: 70%;
 	margin: auto;
 
-	h1, h3 {
+	h1, h2 {
 		max-width: max-content;
+		text-underline-position: under;
+		line-height: 3rem;
 	}
 
-	h1::after {
-		text-decoration: $green;
+	h1 {
+		text-decoration: underline .2rem $green;
 	}
 
-	h3::after {
-		text-decoration: $orange;
+	h2 {
+		text-decoration: underline .2rem $orange;
+	}
+
+	.date {
+		color: $subTextColor;
+		font-weight: bold;
 	}
 
 	a {
